@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCBCBC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:src="@drawable/danho_04"/>
+
+        <Button
+            android:id="@+id/bt_kakao_login"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/kakao_login"
+            android:text="카카오 로그인"
+            android:textColor="#80323232"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_naver_login"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/naver_login"
+            android:text="네이버 로그인"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_none_login"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:background="@drawable/none_login"
+            android:text="비회원"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_dark"/>
+    </LinearLayout>
+
+</LinearLayout>

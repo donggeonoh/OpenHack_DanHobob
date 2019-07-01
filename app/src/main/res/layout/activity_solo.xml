@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Solo"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/searchbar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219">
+
+        <EditText
+            android:id="@+id/hateText"
+            android:textColor="#000000"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:background="#00ff0000"
+            android:onClick="onSearch"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/searchicon" />
+
+    </LinearLayout>
+
+    <!--imageButton의 이미지 사이즈를 버튼 크기에 맞추기-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/jalnan"
+        android:textColor="#f5a106"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805"
+        tools:text="단호하게 걸러줄게" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="단음식"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/noodle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="면"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="고기"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+        <Button
+            android:id="@+id/hotFood"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="뜨거운 음식"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/coldFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="찬 음식"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+        <Button
+            android:id="@+id/ChineseFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="중식"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/KoreanFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="한식"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="일식"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.072">
+
+        <Button
+            android:id="@+id/greasyFood"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="느끼한 음식"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/seaFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background03"
+            android:fontFamily="@font/jalnan"
+            android:onClick="onCheck"
+            android:text="해산물"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="413dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#22682a"
+        android:fontFamily="@font/jalnan"
+        android:onClick="onRecommend"
+        android:text="완료"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
